@@ -18,3 +18,6 @@ def create_measurement(var):
     measurement = Measurement(var["id"],var["variable"], value=var["value"], unit = var["unit"], place=var["place"],dateTime = var["dateTime"] )
     measurement.save()
     return measurement
+
+def delete_measurement(var):
+    return var
